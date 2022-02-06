@@ -11,10 +11,11 @@ public class PizzaStore {
             pizza = new PepperoniPizza();
         else if(PizzaTypes.Sausage.name().equals(pizzaType))
             pizza = new SausagePizza();
-        else if(PizzaTypes.Cheese.equals(pizzaType))
+        else if(PizzaTypes.Cheese.name().equals(pizzaType))
             pizza = new CheesePizza();
         else if(PizzaTypes.Veg.name().equals(pizzaType))
             pizza = new VegPizza();
+
 
         pizza.prepare();
         pizza.bake();
